@@ -1,19 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifynextjs-dev-68e64-authRole",
-      "UnauthRoleArn": "arn:aws:iam::530290170611:role/amplify-amplifynextjs-dev-68e64-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::530290170611:role/amplify-amplifynextjs-dev-68e64-authRole",
+      "AuthRoleName": "amplify-scoreia-dev-b3d3d-authRole",
+      "UnauthRoleArn": "arn:aws:iam::623219780337:role/amplify-scoreia-dev-b3d3d-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::623219780337:role/amplify-scoreia-dev-b3d3d-authRole",
       "Region": "eu-west-1",
-      "DeploymentBucketName": "amplify-amplifynextjs-dev-68e64-deployment",
-      "UnauthRoleName": "amplify-amplifynextjs-dev-68e64-unauthRole",
-      "StackName": "amplify-amplifynextjs-dev-68e64",
-      "StackId": "arn:aws:cloudformation:eu-west-1:530290170611:stack/amplify-amplifynextjs-dev-68e64/f9bb1ed0-27f7-11ef-9975-0aaae384af69",
-      "AmplifyAppId": "d1xoyasnjuuu1s"
+      "DeploymentBucketName": "amplify-scoreia-dev-b3d3d-deployment",
+      "UnauthRoleName": "amplify-scoreia-dev-b3d3d-unauthRole",
+      "StackName": "amplify-scoreia-dev-b3d3d",
+      "StackId": "arn:aws:cloudformation:eu-west-1:623219780337:stack/amplify-scoreia-dev-b3d3d/41938a20-2e34-11ef-ab35-0a5c398e5661",
+      "AmplifyAppId": "d3hj1ebp1vxl1x"
     },
     "categories": {
       "auth": {
-        "amplifynextjs5f1eaeeb": {}
+        "scoreia1ab6b3f0": {}
       }
     }
   }
