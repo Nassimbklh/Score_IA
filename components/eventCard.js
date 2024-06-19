@@ -40,23 +40,41 @@ const EventCard = ({currentEvent}) => {
     }
 
     return (
-        <div className={styles.card}>
-            <div className={styles.img} onClick={handleClick}>
-
-                <p className={styles.head}><img className={styles.flag} src="/france-flag.png" alt="france"/>{currentEvent.team1}</p>
-                <p className={styles.vs}>vs</p>
-                <p className={styles.head}>{currentEvent.team2}<img className={styles.flag} src="/spain-flag.png" alt="spain"/></p>
-            </div>
-
-            <div className={styles.text} ref={textRef}>
-                <p className={styles.h3}>Odds</p>
-                <p className={styles.p}><span className={styles.odds}>{currentEvent.odds.team1}</span> - <span className={styles.odds}>{currentEvent.odds.team2}</span></p>
-
-                <button className={styles.iconbox} onClick={tryToPredict} disabled={isPredicted}>
-                    <p className={styles.span}>{isPredicted ? 'Predicted' : 'Predict'}</p>
-                </button>
-            </div>
+      <div className={styles.card}>
+        <div className={styles.img} onClick={handleClick}>
+          <p className={styles.head}>
+            <img
+              className={styles.flag}
+              src="/Manchester_City.png"
+              alt="Manchester_City"
+            />
+            {currentEvent.team1}
+          </p>
+          <p className={styles.vs}>vs</p>
+          <p className={styles.head}>
+            {currentEvent.team2}
+            <img className={styles.flag} src="/Arsenal.png" alt="Arsenal" />
+          </p>
         </div>
+
+        <div className={styles.text} ref={textRef}>
+          <p className={styles.h3}>Odds</p>
+          <p className={styles.p}>
+            <span className={styles.odds}>{currentEvent.odds.team1}</span> -{" "}
+            <span className={styles.odds}>{currentEvent.odds.team2}</span>
+          </p>
+
+          <button
+            className={styles.iconbox}
+            onClick={tryToPredict}
+            disabled={isPredicted}
+          >
+            <p className={styles.span}>
+              {isPredicted ? "Predicted" : "Predict"}
+            </p>
+          </button>
+        </div>
+      </div>
     );
 };
 

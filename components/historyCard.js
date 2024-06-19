@@ -28,22 +28,38 @@ const HistoryCard = ({currentEvent}) => {
     }
 
     return (
-        //if isPredicted is true, show component
-        isPredicted &&
+      //if isPredicted is true, show component
+      isPredicted && (
         <div className={styles.card}>
-            <div className={styles.img}>
-                <div className={styles.predict}>
-                    <p className={styles.head}><img className={styles.flag} src="/france-flag.png" alt="france"/></p>
-                    <p className={styles.vs}>vs</p>
-                    <p className={styles.head}><img className={styles.flag} src="/spain-flag.png" alt="spain"/></p>
-                </div>
-                <img className={styles.arrow} src="/arrow.svg" alt="to"/>
-                <img className={styles.flag} src="/france-flag.png" alt="france"/>
-                <img className={styles.trash} src="/trash.svg" alt="delete" onClick={deletePredict}/>
-
+          <div className={styles.img}>
+            <div className={styles.predict}>
+              <p className={styles.head}>
+                <img
+                  className={styles.flag}
+                  src="Manchester_City.png"
+                  alt="Manchester_City"
+                />
+              </p>
+              <p className={styles.vs}>vs</p>
+              <p className={styles.head}>
+                <img className={styles.flag} src="/Arsenal.png" alt="Arsenal" />
+              </p>
             </div>
-
+            <img className={styles.arrow} src="/arrow.svg" alt="to" />
+            <img
+              className={styles.flag}
+              src="/fManchester_City.png"
+              alt="Manchester_City"
+            />
+            <img
+              className={styles.trash}
+              src="/trash.svg"
+              alt="delete"
+              onClick={deletePredict}
+            />
+          </div>
         </div>
+      )
     );
 };
 
